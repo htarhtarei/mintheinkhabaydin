@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700;800;900&family=Poppins:wght@300;400;500;600&display=swap');
+
+body{
+    background-color:#f3f4f6;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:"Onest",san-serif;
+}
+
+ .scrollUp {
+    color: #78350f;
+    font-size: 1.1rem;
+    background-color: var(--white-color);
+    padding: 3px 5px;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 3.5rem;
+    right: 1rem;
+    animation: upDown 2s linear infinite;
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

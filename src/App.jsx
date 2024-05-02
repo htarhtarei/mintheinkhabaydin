@@ -1,16 +1,15 @@
 import './App.css'
 import Logo from './components/Logo'
 import { Routes, Route } from 'react-router-dom'
-import useFetch from "./Hooks/useFetch";
 
 
 //pages
 import HomePage from './Page/HomePage'
 import PickNumberPage from './Page/PickNumberPage'
 import AnswerPage from './Page/AnswerPage'
+import { answers } from './data/data';
 
 function App() {
-  const [answers] = useFetch("answers");
 
   return (
     <div className=''>

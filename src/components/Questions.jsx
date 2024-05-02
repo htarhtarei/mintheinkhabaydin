@@ -2,12 +2,12 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import useFetch from "../Hooks/useFetch";
+import { questions } from "../data/data";
 import { setQuestions } from "../store/questionSlice";
 
 const Questions = () => {
-    const [ data  ] = useFetch("questions");
-    const dispatch = useDispatch();
+  const data = questions
+  const dispatch = useDispatch(); 
 
     //to store question data in question slice
     useEffect(() => {

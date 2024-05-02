@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {  useNavigate ,useParams ,Link } from "react-router-dom";
-import useFetch from "../Hooks/useFetch";
+import { numberList } from "../data/data";
 import { setSelectedQuestion } from "../store/questionSlice";
 
 const PickNumberPage = () => {
@@ -10,7 +10,7 @@ const PickNumberPage = () => {
   const dispatch = useDispatch();
   
   //to get numberlist data from api
-  const [data] = useFetch("numberList");
+  const data = numberList
 
   //to get questions data from store
   const { questions: ques } = useSelector((state) => state.question);
